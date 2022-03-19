@@ -1,0 +1,167 @@
+body {
+    font-family: serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+a.active,a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: serif;
+    font-size: 16px;
+    text-align: center;
+}
+td, th {
+    text-align: center;
+}
+th {
+    background-color: white;
+    color: rgb(41, 35, 35);
+    font-size: 20px;
+}
+tr:nth-child(even) {background-color: #ebf9fc;}
+.transfers_table {
+    /*position: absolute;*/
+    margin-left: 50%;
+    margin-top: 20%;
+    transform: translate(-50%,-50%);
+    width: 80%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    /*overflow: hidden;*/
+}
+.transfers_table td, th {
+    padding: 15px 20px;
+    text-align: center;
+}
+.transfers_table th {
+    background-color: #2ca0f8;
+    color: #fafafa;
+    font-family: serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.transfers_table tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: serif;
+}
+.transfers_table tr:nth-child(even) {
+    background-color: #d4cccc;
+}
+.transfers_title {
+    text-align: center; 
+    font-size: 40px; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-decoration: underline;
+    color:rgb(99, 77, 77);
+}
+form {
+    max-width: 460px;
+    margin: 20px auto;
+    padding: 20px;
+}
+a:hover {
+    background: white;
+}
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+color: #3f50b5;
+}
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+border-bottom: 2px solid #3f50b5;
+box-shadow: none;
+}
+.input-field label{
+left: 0;
+}
+form{
+margin: 30px auto;
+align-items: center;
+justify-content: center;
+width: 45%;
+}
+.btn-large{
+height: 45px;
+line-height:45px;
+}
+.m-b-none{
+margin-bottom: 0;
+}
+.padder-x{
+padding: 0 !important;
+}
+.m-md{
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.forgotpassword{
+font-weight: bold;
+}
+h2{
+margin-top: 50px;
+font-weight: 400;
+letter-spacing: 2px;
+padding:20px;
+}
+@media(max-width: 700px){
+form{
+width: 60%;
+}
+}
+@media(max-width: 530px){
+form{
+width: 70%;
+}
+}
+@media(max-width: 450px){
+form{
+width: 80%;
+}
+}
